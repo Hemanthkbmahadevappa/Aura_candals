@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Web App</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f3;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333333;
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+  h3{
+	color: green;
+	}
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .slider {
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slider img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .slider img.active {
+      opacity: 1;
+    }
+
+    .vision-mission p {
+      font-size: 16px;
+    }
+
+    .product {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .product img {
+      width: 100px;
+      height: 100px;
+      margin-right: 20px;
+    }
+
+    .product-rating {
+      display: flex;
+      align-items: center;
+    }
+
+    .product-rating span {
+      margin-left: 5px;
+    }
+
+    .contact-info {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .sub-buttons {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .sub-buttons.active {
+      display: block;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Aura candles</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="https://butterflybeautyshop.files.wordpress.com/2015/02/candle-bath-salts-from-lavender-oil.jpg" class="button" onclick="showPage('home')">Home</a></li>
+      <li><a href="#about" class="button" onclick="showPage('about')">About</a></li>
+      <li><a href="#products" class="button" onclick="showPage('products')">Products</a></li>
+      <li><a href="#contact" class="button" onclick="showPage('contact')">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="home" class="page">
+      <h2>Divine Light</h2>
+      <div class="slider">
+        <img src="https://th.bing.com/th/id/R.56144edaf20a4317126f1e5da987783c?rik=f%2b4mcly2LIqGMw&riu=http%3a%2f%2ftheromantic.com%2fwp-content%2fuploads%2f2015%2f07%2fromantic-candles-ideas.jpg&ehk=uOroT4WPNNSmFlQfM0YaiO%2fVR26VRpaHz1uwxyD6d78%3d&risl=&pid=ImgRaw&r=0" alt="Product 1" class="active">
+        <img src="https://th.bing.com/th/id/OIP.b_-C5Q3cV4DEG55h3NlvdwHaEK?w=324&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Product 2">
+        <img src="https://th.bing.com/th/id/OIP.so74d3tCGEmX9M2met5x_wHaFj?w=245&h=184&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Product 3">
+	<img src="https://th.bing.com/th/id/OIP.Ut3u3oEqm_kzx8_MSVnC3gHaDt?pid=ImgDet&rs=1" alt="Product 4">
+      </div>
+    </section>
+    <section id="about" class="page">
+      <h2>About</h2>
+
+      <div class="vision-mission">
+        <h3>Vision</h3>
+        <p>"Our mission is to create high-quality, handcrafted candles that bring warmth, comfort, and relaxation to people's lives. We strive to use sustainable and eco-friendly materials, ensuring our products are both beautiful and environmentally responsible. Through our candles, we aim to create soothing and captivating experiences, enhancing ambiance and promoting a sense of well-being in homes and spaces. We are dedicated to continuous innovation, offering a wide range of unique fragrances and designs that cater to diverse preferences and lifestyles."</p>
+        <h3>Mission</h3>
+        <p>"Our vision is to be the leading candle company, renowned for our exceptional craftsmanship and innovative designs. We strive to create a world where the gentle glow of our candles illuminates moments of serenity and creates lasting memories. Through our commitment to quality, sustainability, and customer satisfaction, we aim to inspire a deeper appreciation for the art of candle making. Our vision is to enhance people's lives with the enchanting beauty and therapeutic ambiance of our candles."</p>
+      </div>
+    </section>
+    <section id="products" class="page">
+      <h2>Products</h2>
+      <div class="product">
+        <img src="https://th.bing.com/th/id/OIP.m9WhO194sCSjYoiKbULD_QHaHa?pid=ImgDet&rs=1" alt="Product 1">
+        <div class="product-rating">
+          <span>Product 1</span>
+          <span>&#9733; 4.5</span>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://www.fnp.com/images/pr/l/v20221231122549/soothing-lavender-candles_1.jpg" alt="Product 2">
+        <div class="product-rating">
+          <span>Product 2</span>
+          <span>&#9733; 4.2</span>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://th.bing.com/th/id/OIP.chFM3FTsLf003UvNn96zFAHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Product 3">
+        <div class="product-rating">
+          <span>Product 3</span>
+          <span>&#9733; 4.7</span>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="page">
+      <h2>Contact</h2>
+      <div class="sub-buttons" id="phone">
+        <p>Phone: 123-456-7890</p>
+      </div>
+      <div class="sub-buttons" id="email">
+        <p>Email: info@example.com</p>
+      </div>
+      <div class="sub-buttons" id="address">
+        <p>Address: 123 Street, Bangalore, India</p>
+      </div>
+      <a href="javascript:void(0)" class="button" onclick="toggleSubButtons('phone')">Phone</a>
+      <a href="javascript:void(0)" class="button" onclick="toggleSubButtons('email')">Email</a>
+      <a href="javascript:void(0)" class="button" onclick="toggleSubButtons('address')">Address</a>
+    </section>
+  </main>
+
+  <script>
+    // JavaScript code
+    // You can add your JavaScript functionality here if needed
+    function showPage(page) {
+      const pages = document.querySelectorAll('.page');
+      pages.forEach((p) => {
+        p.style.display = 'none';
+      });
+      document.getElementById(page).style.display = 'block';
+    }
+
+    function toggleSubButtons(button) {
+      const subButtons = document.querySelectorAll('.sub-buttons');
+      subButtons.forEach((sb) => {
+        sb.classList.remove('active');
+      });
+      document.getElementById(button).classList.toggle('active');
+    }
+
+    const sliderImages = document.querySelectorAll('.slider img');
+    let currentSlide = 0;
+
+    function changeSlide() {
+      sliderImages[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % sliderImages.length;
+      sliderImages[currentSlide].classList.add('active');
+    }
+
+    setInterval(changeSlide, 2000);
+
+    // Show the home page by default
+    showPage('home');
+  </script>
+</body>
+</html>
